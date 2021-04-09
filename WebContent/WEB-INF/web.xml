@@ -15,11 +15,22 @@
 					validationQuery=select 1
 					minIdle=3
 					maxTotal=30
-					poolName=poolname
+					poolName=live
    				</param-value>
   </context-param>
   
- 
+ 	<filter>
+    	<filter-name>encodingFilter</filter-name>
+    	<filter-class>util.CharacterEncodingFilter</filter-class>
+    	<init-param>
+    		<param-name>encoding</param-name>
+    		<param-value>utf-8</param-value>
+    	</init-param>
+    </filter>
+  	<filter-mapping>
+  		<filter-name>encodingFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
   <!-- ControllerUsingURI구동 -->
   <servlet> <!-- 프로퍼티로 연결해주는 부분 -->
 			<servlet-name>ControllerUsingURI</servlet-name>

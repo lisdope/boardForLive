@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class ConnectionProvider{
 	
 	public static Connection getConnection() throws SQLException {
-		return DriverManager.getConnection("jdbc:apache:commons:dbcp:poolname"); // web.xml = poolname
+		return DriverManager.getConnection("jdbc:apache:commons:dbcp:live"); // web.xml = poolname
 	}
 
 }
