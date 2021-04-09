@@ -18,8 +18,7 @@
 					poolName=live
    				</param-value>
   </context-param>
-<<<<<<< HEAD
-  
+
  	<filter>
     	<filter-name>encodingFilter</filter-name>
     	<filter-class>util.CharacterEncodingFilter</filter-class>
@@ -32,22 +31,7 @@
   		<filter-name>encodingFilter</filter-name>
   		<url-pattern>/*</url-pattern>
   	</filter-mapping>
-=======
-   <!-- encodingFilter구동 -->
-    <filter>
-	  	<filter-name>encodingFilter</filter-name>
-	  	<filter-class>util.CharacterEncodingFilter</filter-class>
-	  	<init-param>
-	  		<param-name>encoding</param-name>
-	  		<param-value>utf-8</param-value>
-	  	</init-param>
-  </filter>
-  <filter-mapping>
-	  	<filter-name>encodingFilter</filter-name>
-	  	<url-pattern>/*</url-pattern>
-  </filter-mapping>
- 
->>>>>>> d2fe505fa45e26ffeca2ec36bc64408f44e2d3a4
+
   <!-- ControllerUsingURI구동 -->
   <servlet> <!-- 프로퍼티로 연결해주는 부분 -->
 			<servlet-name>ControllerUsingURI</servlet-name>
